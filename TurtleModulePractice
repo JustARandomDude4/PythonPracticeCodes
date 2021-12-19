@@ -1,0 +1,32 @@
+# Just a practice code on turtle module
+
+#I created two turtles, one draws a pentagon and the other a spiral turtle stamp  with different speeds
+
+import turtle as t
+
+scr=t.Screen()
+scr.bgcolor("DeepPink")
+
+sat=t.Turtle()
+sat.color("Black")
+sat.pensize(15)
+sat.shape("turtle")
+sat.speed(10)
+
+sah=t.Turtle()
+sah.color("Blue")
+sah.pensize(5)
+sah.speed(5)
+
+sat.up()
+dis=10
+for i in range(30):
+    sat.stamp()
+    sat.forward(dis)
+    sat.left(24)
+    dis+=2
+
+dis=100
+for i in range(5):
+    sah.forward(dis)
+    sah.left(72)
